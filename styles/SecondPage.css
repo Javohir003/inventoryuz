@@ -1,0 +1,29 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0px !important;
+  }
+  .info-checked {
+    transition: all 0.5s;
+    display: block;
+  }
+  .title-second {
+    padding: 45px !important;
+  }
+  .left-info-wrapper {
+    margin-bottom: 55px !important;
+  }
+  .right-info-wrapper p {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 750px) {
+  .title-second {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .left-info-wrapper .font-bold {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=SecondPage.css.map */

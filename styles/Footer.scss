@@ -1,0 +1,156 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px !important;
+  margin-bottom: 50px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  svg path {
+    fill: #fbb533;
+  }
+}
+
+.tarmoqlar {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.tarmoqlar {
+  .child-social {
+    svg {
+      width: 30px;
+      transition: all 0.4s;
+      &:hover {
+        fill: black;
+      }
+    }
+  }
+}
+
+// .child-social:hover p {
+//   opacity: 1;
+//   transform: translateY(-43px);
+// }
+
+// .child-social:nth-child(2) p::before {
+//   content: "";
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   background-color: black;
+//   left: 29px;
+//   top: 10px;
+//   transform: rotate(132deg);
+//   border-radius: 2px;
+//   z-index: -2;
+// }
+
+// .child-social:nth-child(1) p::before {
+//   content: "";
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   background-color: black;
+//   left: 26px;
+//   top: 10px;
+//   transform: rotate(132deg);
+//   border-radius: 2px;
+//   z-index: -2;
+// }
+
+.hide {
+  display: none;
+}
+
+.font-normals {
+  transition: all 0.6s;
+  background-color: orange;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid orange;
+    background: transparent;
+    color: orange;
+  }
+}
+
+footer {
+  border-top: 1px solid rgb(227, 223, 223);
+  box-shadow: 0px 0px 0px gray;
+}
+
+.footer-child-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .Logo-wrapper {
+    padding: 30px 0px 30px 0px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-child-wrapper {
+    .tarmoqlar {
+      .child-social {
+        svg {
+          transition: all 0.5s;
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Logo-wrapper {
+    margin-bottom: 10px;
+    img {
+      
+      width: 200px;
+    }
+  }
+  .contacts {
+    article {
+      display: flex;
+      svg {
+        align-self: flex-start;
+        width: 23px !important;
+      }
+      .addres{
+        width: 33px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px){
+  .contacts {
+    gap: 30px;
+    article {
+      p{
+        font-size: 14px;
+      }
+      svg {
+        align-self: flex-start;
+        width: 22px !important;
+      }
+      .addres{
+        width: 30px !important;
+      }
+    }
+  }
+}
