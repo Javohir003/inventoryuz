@@ -76,40 +76,40 @@ const Navbar: React.FC = () => {
       <div>
         {/* show navbar modal start */}
         <div className={`show-modal-navbar transform -translate-x-full transition-transform duration-300 ${isnavbarmodal ? "translate-x-0" : "-translate-x-full"}`}>
-          <button onClick={handleClose} className=" translate-x-[15px] translate-y-[32px] m-0">
+          <button onClick={handleClose} className=" translate-x-[15px] translate-y-[32px] m-0" aria-label="handle-close">
             <svg className="w-[25px]" viewBox="0 0 384 512"><path fill="white" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" /></svg>
           </button>
-          <Link href="/" onClick={() => setNavbarModal(false)}>
+          <Link href="/" onClick={() => setNavbarModal(false)} aria-label="link">
             <Image className="w-[260px] translate-y-[-15px] translate-x-[15px] m-auto logo" src={WhiteLogo} alt="Inventory.uz Logo" />
           </Link>
           <hr />
-          <ul className="!flex flex-col items-center text-start mt-24 gap-10 ">
-            <Link href="/about">
-              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/about' ? 'active' : ''}`}>
+          <ul className="!flex flex-col items-center text-start mt-24 gap-10">
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 ${activeLink === '/about' ? 'active' : ''}`}>
+              <Link href="/about" aria-label="link">
                 {t('nav1')}
-              </li>
-            </Link>
-            <Link href="/ourservice">
-              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/ourservice' ? 'active' : ''}`}>
+              </Link>
+            </li>
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 ${activeLink === '/ourservice' ? 'active' : ''}`}>
+              <Link href="/ourservice" aria-label="link">
                 {t('nav2')}
-              </li>
-            </Link>
-            <Link href="/info">
-              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/info' ? 'active' : ''}`}>
+              </Link>
+            </li>
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300  ${activeLink === '/info' ? 'active' : ''}`}>
+              <Link href="/info" aria-label="link">
                 {t('nav3')}
-              </li>
-            </Link>
-            <Link href="/contact">
-              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/contact' ? 'active' : ''}`}>
+              </Link>
+            </li>
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 ${activeLink === '/contact' ? 'active' : ''}`}>
+              <Link href="/contact" aria-label="link">
                 {t('nav4')}
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
           <div className="w-full h-full">
             <article className="w-full flex justify-center items-center gap-5 absolute bottom-7">
-              <Link href="/" locale="en" onClick={() => handleLanguageChange('English')}><Image width={26} src={eng} alt="Flag england" /></Link>
-              <Link href="/" locale="ru" onClick={() => handleLanguageChange('Russian')}><Image width={30} src={rus} alt="Flag Russian" /></Link>
-              <Link href="/" locale="uz" onClick={() => handleLanguageChange('Uzbek')}><Image width={30} src={uzb} alt="Flag Uzbek" /></Link>
+              <Link href="/" locale="en" onClick={() => handleLanguageChange('English')} aria-label="language"><Image width={26} src={eng} alt="Flag england" /></Link>
+              <Link href="/" locale="ru" onClick={() => handleLanguageChange('Russian')} aria-label="language"><Image width={30} src={rus} alt="Flag Russian" /></Link>
+              <Link href="/" locale="uz" onClick={() => handleLanguageChange('Uzbek')} aria-label="language"><Image width={30} src={uzb} alt="Flag Uzbek" /></Link>
             </article>
           </div>
         </div>
@@ -118,30 +118,27 @@ const Navbar: React.FC = () => {
           <nav className="max-w-[1180px] px-2 flex justify-between items-center m-auto py-[10px]">
             <Link href="/" onClick={() => handleLinkClick('/')}><Image className="w-[250px] logo" src={Logo} alt="Logo" /></Link>
             <ul className="flex gap-10  nav-item">
-              <Link href="/about" onClick={() => handleLinkClick('/about')}>
-                <li className={`cursor-pointer transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/about' ? 'active' : ''}`}>
+              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/about' ? 'active' : ''}`}>
+                <Link href="/about" aria-label="link">
                   {t('nav1')}
-                </li>
-              </Link>
+                </Link>
+              </li>
 
-              <Link href="/ourservice" onClick={() => handleLinkClick('/ourservice')}>
-                <li className={`cursor-pointer transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/ourservice' ? 'active' : ''}`}>
-                  {t('nav2')}
-                </li>
+              <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/ourservice' ? 'active' : ''}`}>
+              <Link href="/ourservice" aria-label="link">
+                {t('nav2')}
               </Link>
-
-              <Link href="/info" onClick={() => handleLinkClick('/info')}>
-                <li className={`cursor-pointer transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/info' ? 'active' : ''}`}>
-                  {t('nav3')}
-                </li>
+            </li>
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/info' ? 'active' : ''}`}>
+              <Link href="/info" aria-label="link">
+                {t('nav3')}
               </Link>
-
-
-              <Link href="/contact" onClick={() => handleLinkClick('/contact')}>
-                <li className={`cursor-pointer transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/contact' ? 'active' : ''}`}>
-                  {t('nav4')}
-                </li>
+            </li>
+            <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/contact' ? 'active' : ''}`}>
+              <Link href="/contact" aria-label="link">
+                {t('nav4')}
               </Link>
+            </li>
             </ul>
             <div className="modal-i18n-wrapper" tabIndex={0} onBlur={() => setIsOpen(false)} onFocus={() => setIsOpen(true)}>
               <article className="flex gap-2 modal-i18n close">
@@ -151,13 +148,13 @@ const Navbar: React.FC = () => {
                 <p>{selectedLanguage}</p>
               </article>
               <ul className={`modal-child transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
-                <Link href="/" locale="en" onClick={() => handleLanguageChange('English')}>English</Link>
-                <Link href="/" locale="ru" onClick={() => handleLanguageChange('Russian')}>Russian</Link>
-                <Link href="/" locale="uz" onClick={() => handleLanguageChange('Uzbek')}>Uzbek</Link>
+                <Link href="/" locale="en" onClick={() => handleLanguageChange('English')} aria-label="language">English</Link>
+                <Link href="/" locale="ru" onClick={() => handleLanguageChange('Russian')} aria-label="language">Russian</Link>
+                <Link href="/" locale="uz" onClick={() => handleLanguageChange('Uzbek')} aria-label="language">Uzbek</Link>
               </ul>
             </div>
 
-            <button onClick={() => setNavbarModal(!isnavbarmodal)} className="burger-show"><svg className="w-[25px]" viewBox="0 0 448 512"><path fill="#fbb533" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg></button>
+            <button onClick={() => setNavbarModal(!isnavbarmodal)} className="burger-show" aria-label="burger-show"><svg className="w-[25px]" viewBox="0 0 448 512"><path fill="#fbb533" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg></button>
           </nav>
         </div>
       </div>

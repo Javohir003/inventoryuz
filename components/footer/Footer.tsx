@@ -45,6 +45,7 @@ const Footer: React.FC = () => {
                             href="https://t.me/InventoryCEO"
                             target="_blank"
                             className="child-social"
+                            aria-label="telegram"
                         >
                             <svg
                                 fill="#9ca3af"
@@ -61,6 +62,7 @@ const Footer: React.FC = () => {
                             href="https://www.instagram.com/auditsklad.uz/"
                             target="_blank"
                             className="child-social"
+                            aria-label="instagram"
                         >
                             <svg
                                 fill="#9ca3af"

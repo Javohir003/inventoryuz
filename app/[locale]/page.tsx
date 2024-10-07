@@ -205,7 +205,7 @@ export default  function Home() {
                 pauseOnHover={true}
               >
                 <div className="flex gap-24 items-center py-5">
-                  <a href="#1" className="ml-4 flex items-center gap-4">
+                  <a href="#1" className="ml-4 flex items-center gap-4" aria-label='partnyor'>
                     <svg
                       width="42"
                       height="42"
@@ -230,28 +230,28 @@ export default  function Home() {
                     </svg>
                     <h2 className="text-3xl font-bold">Sharh</h2>
                   </a>
-                  <a href="#2">
+                  <a href="#2" aria-label='partnyor'>
                     <Image className="w-44 part1" src={slide2} alt="Iqtidor IT Academy" />
                   </a>
-                  <a href="#3">
+                  <a href="#3" aria-label='partnyor'>
                     <Image className="w-24 part1" src={slide3} alt="ThermoKing" />
                   </a>
-                  <a href="#4">
+                  <a href="#4" aria-label='partnyor'>
                     <Image className="w-40 part1" src={slide4} alt="Time Group" />
                   </a>
-                  <a href="#5">
+                  <a href="#5" aria-label='partnyor'>
                     <Image className="w-40 part1" src={slide5} alt="Studio Motors" />
                   </a>
-                  <a href="#6">
+                  <a href="#6" aria-label='partnyor'>
                     <Image className="w-40 part1" src={slide6} alt="MAN uz" />
                   </a>
-                  <a href="#7">
+                  <a href="#7" aria-label='partnyor'>
                     <Image className="w-35 part1" src={slide7} alt="UZAUTO Trailer" />
                   </a>
-                  <a href="#8">
+                  <a href="#8" aria-label='partnyor'>
                     <Image className="w-40 part1" src={slide8} alt="Temir yo'llar" />
                   </a>
-                  <a href="#9" className="mr-20">
+                  <a href="#9" className="mr-20" aria-label='partnyor'>
                     <Image className="w-40 part1" src={slide9} alt="Central Asia Trans" />
                   </a>
                 </div>
@@ -283,7 +283,7 @@ export default  function Home() {
                       {t('services_box_desc4')}
                     </li>
                   </ul>
-                  <button className="m-auto px-10 py-2 rounded-md transition-all duration-200 font-bold text-white bg-[#ffc000] hover:shadow hover:bg-[#ffbf00cf] btn">
+                  <button className="m-auto px-10 py-2 rounded-md transition-all duration-200 font-bold text-white bg-[#ffc000] hover:shadow hover:bg-[#ffbf00cf] btn" aria-label='service-btn'>
                     {t('services_box_btn')}
                   </button>
                 </article>
@@ -308,7 +308,7 @@ export default  function Home() {
                       {t('services_box2_desc4')}
                     </li>
                   </ul>
-                  <button className="m-auto px-10 py-2 rounded-md transition-all duration-200 font-bold text-white bg-[#ffc000] hover:shadow hover:bg-[#ffbf00cf] btn">
+                  <button className="m-auto px-10 py-2 rounded-md transition-all duration-200 font-bold text-white bg-[#ffc000] hover:shadow hover:bg-[#ffbf00cf] btn" aria-label='service-btn'>
                     {t('services_box_btn')}
                   </button>
                 </article>
@@ -325,7 +325,7 @@ export default  function Home() {
               <p className="text-[20px] w-[70%] title-audit text-white mb-5">
                 {t('order_desc')}
               </p>
-              <button className=" m-auto px-10 py-2 rounded-md font-bold text-white bg-[#ffc000] btn">
+              <button className=" m-auto px-10 py-2 rounded-md font-bold text-white bg-[#ffc000] btn" aria-label='service-btn'>
                 {t('order_btn')}
               </button>
             </div>

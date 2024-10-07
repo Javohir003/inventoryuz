@@ -75,7 +75,7 @@ export default function About() {
             <p className="text-[22px] mb-5 max-w-[70%] text-white">
               {t("card_desc")}
             </p>
-            <button className="px-[25px] py-[10px] text-white font-medium btn bg-[#ffc000] rounded-md cursor-pointer">
+            <button className="px-[25px] py-[10px] text-white font-medium btn bg-[#ffc000] rounded-md cursor-pointer" aria-label="about-btn">
               {t("btn")}
             </button>
           </article>

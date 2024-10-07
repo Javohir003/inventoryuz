@@ -12,11 +12,11 @@ export default function About() {
           <div className="container flex justify-between mb-8 contact-child1">
             <article>
               <h2 className="text-[20px] font-[600]">{t('phone')}</h2>
-              <a href="tel: +99893 137 0603"><p className="text-[#8f8d8d] text-[18px] tel-anim">+998 93 137 06 03</p></a>
+              <a href="tel: +99893 137 0603" aria-label='link'><p className="text-[#8f8d8d] text-[18px] tel-anim">+998 93 137 06 03</p></a>
             </article>
             <article>
               <h2 className="text-[20px] font-[600]">{t('addres')}</h2>
-              <a href="https://maps.app.goo.gl/BQ3cPYxEDayA4Wvy5" target="_blank"><p className="text-[#8f8d8d] text-[18px] max-w-[70%]">Ziyolilar street, 9, Mirzo-Ulugbek district, Tashkent</p></a>
+              <a href="https://maps.app.goo.gl/BQ3cPYxEDayA4Wvy5" target="_blank" aria-label='link'><p className="text-[#8f8d8d] text-[18px] max-w-[70%]">Ziyolilar street, 9, Mirzo-Ulugbek district, Tashkent</p></a>
             </article>
             <article>
               <h2 className="text-[20px] font-[600]">{t('email')}</h2>
