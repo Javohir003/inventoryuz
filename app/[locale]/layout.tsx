@@ -5,7 +5,7 @@ import Footer from '@/components/footer/Footer'
 import ProgressBar from "@/components/RoutingProgres/PrograsBar";
 import {NextIntlClientProvider} from 'next-intl'
 import { getMessages } from "next-intl/server";
-
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata:Metadata = {
   title: {
@@ -52,6 +52,7 @@ export default async function RootLayout({
           <Navbar/>
           <ProgressBar/>
           {children}
+          <Analytics/>
           <Footer/>
         </body>
       </html>
