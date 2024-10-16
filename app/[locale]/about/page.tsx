@@ -36,8 +36,8 @@ export default function About() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start">
-                    <p className="w-[15px] h-[15px] p-3 bg-orange-400 flex items-center justify-center rounded-full font-normal text-white">
-                      2
+                    <p className="w-[15px] h-[15px] p-3 bg-orange-400 flex items-center justify-center rounded-full font-normal text-black">
+                      2 Hello World degan so'z
                     </p>
                     <span className="text-gray-500">
                       {t("title_left_desc2")}
