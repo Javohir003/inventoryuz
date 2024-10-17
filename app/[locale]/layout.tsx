@@ -10,8 +10,16 @@ import { Analytics } from '@vercel/analytics/react';
 export const metadata:Metadata = {
   title: {
     absolute: "",
-    default: "Inventory.uz",
+    default: "",
     template: "%s | Inventory.uz 2024"
+  },
+  icons: {
+    icon: [
+      {
+        type: "image/ico",
+        url: '/favicon.ico',
+      }
+    ]
   },
   description: "",
   openGraph: {
