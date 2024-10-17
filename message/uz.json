@@ -121,5 +121,12 @@
     "email": "Elektron pochta",
     "titleMeta": "Kontakt",
     "description": "Audit va omborlarni boshqarish xizmatlarimiz bo'yicha har qanday savol uchun Audit-Sklad bilan bog'laning. Bizning jamoamiz sizga biznes ehtiyojlarini qondirish uchun mutaxassis maslahati va shaxsiylashtirilgan yechimlar bilan yordam berish uchun shu yerda"
-  }
+  },
+  "pagesSitemap": [
+    { "path": "/", "priority": 1 },
+    { "path": "/about", "priority": 0.8 },
+    { "path": "/ourservice", "priority": 0.8 },
+    { "path": "/info", "priority": 0.8},
+    { "path": "/contact", "priority": 0.8}
+  ]
 }

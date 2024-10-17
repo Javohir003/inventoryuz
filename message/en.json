@@ -123,5 +123,12 @@
     "email": "Email",
     "titleMeta": "Contact",
     "description": "Get in touch with Audit-Sklad for any inquiries regarding our audit and warehouse management services. Our team is here to assist you with expert advice and personalized solutions to meet your business needs"
-  }
+  },
+  "pagesSitemap": [
+    { "path": "/", "priority": 1 },
+    { "path": "/about", "priority": 0.8 },
+    { "path": "/ourservice", "priority": 0.8 },
+    { "path": "/info", "priority": 0.8},
+    { "path": "/contact", "priority": 0.8}
+  ]
 }
