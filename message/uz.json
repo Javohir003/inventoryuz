@@ -89,7 +89,7 @@
     "card4_title": "Avtomatlashtirish va WMS",
     "card4_desc": "Ombor avtomatlashtirilishi barcha jarayonlarni o'z vaqtida, shaffof va samarali boshqarishni ta'minlaydi va inson omili bilan bog'liq xatolarni oldini olishga yordam beradi.",
     "titleMeta": "Xizmatlar",
-    "description": "Xizmatlar sahifasi, inglizcha versiya"
+    "description": "Biznes ehtiyojlaringizga moslashtirilgan audit va omborlarni boshqarish xizmatlarining keng doirasini kashf eting. Audit-Sklad kompaniyasida biz ekspert moliyaviy auditlar, inventar nazorati va omborlarni optimallashtirish bo'yicha yechimlarni taqdim etishga ixtisoslashganmiz."
   },
   "Information": {
     "title": "Ma'lumot",
@@ -112,7 +112,7 @@
     "alt5": "Ombor hisobini qanday to'g'ri tashkil qilish va avtomatlashtirish",
     "alt6": "Omborda inventarizatsiyani qanday o'tkazish kerak",
     "titleMeta": "Biz haqimizda",
-    "description": "Ma'lumotlar sahifasi, inglizcha versiya"
+    "description": "Audit-Sklad, bizning vazifamiz va biz qanday qilib yuqori audit va omborlarni boshqarish va yechimlarni taqdim etishimiz haqida ko'proq bilib oling. Bizning tajribamiz, jamoamiz va sifatli xizmat ko'rsatish va biznes samaradorligiga sodiqligimizni o'rganing."
   },
   "Contact": {
     "title": "Aloqa",
@@ -120,6 +120,6 @@
     "addres": "Manzil",
     "email": "Elektron pochta",
     "titleMeta": "Kontakt",
-    "description": "Kontakt sahifasi, inglizcha versiya"
+    "description": "Audit va omborlarni boshqarish xizmatlarimiz bo'yicha har qanday savol uchun Audit-Sklad bilan bog'laning. Bizning jamoamiz sizga biznes ehtiyojlarini qondirish uchun mutaxassis maslahati va shaxsiylashtirilgan yechimlar bilan yordam berish uchun shu yerda"
   }
 }
