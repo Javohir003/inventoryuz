@@ -11,7 +11,7 @@ interface Page {
 
 
 export async function generateSitemap(locale: string): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'http://localhost:3000';
+  const baseUrl = 'https://audit-sklad.uz/';
 
   // Tillar va sahifalar
   const languages: Record<string, Page[]> = {
