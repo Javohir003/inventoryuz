@@ -1,4 +1,4 @@
-import { Metadata, MetadataRoute } from 'next';
+import { MetadataRoute } from 'next';
 import uzPages from '@/message/uz.json';
 import ruPages from '@/message/ru.json';
 import enPages from '@/message/en.json';
@@ -28,7 +28,7 @@ export async function generateSitemap(locale: string): Promise<MetadataRoute.Sit
     sitemap.push({
       url: `${baseUrl}/${locale}${page.path}`, // URL yaratish
       lastModified: page.lastModified || new Date().toISOString(), // Sahifaning oxirgi o'zgarishi
-      priority: page.priority, // Sahifa priority qiymati
+      priority: page.priority, // priority qiymati
     });
   });
 
@@ -36,7 +36,7 @@ export async function generateSitemap(locale: string): Promise<MetadataRoute.Sit
 }
 
 export default async function sitemap(context: any): Promise<MetadataRoute.Sitemap> {
-  const locale = context.locale || 'en'; // Default locale 'en' sifatida berilgan.
-  console.log('Locale in use: ', locale); // Bu yerda locale qiymatini tekshirish
+  const locale = context.locale || 'en'; // Default locale 'en'
+  console.log('Locale in use: ', locale); // locale qiymatini check
   return generateSitemap(locale);
-}
+}   

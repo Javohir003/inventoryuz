@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
   const pathname = usePathname();
   const [activeLink, setActiveLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('English'); // Default til English
+  const [selectedLanguage, setSelectedLanguage] = useState('Russian'); // Default til English
   const [isnavbarmodal, setNavbarModal] = useState(false);
 
 
@@ -41,7 +41,6 @@ const Navbar: React.FC = () => {
     setSelectedLanguage(language);
     localStorage.setItem('selectedLanguage', language); // Tilni localStorage ga saqlash
     setIsOpen(false)
-    console.log(language);
 
   };
 
