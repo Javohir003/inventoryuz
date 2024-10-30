@@ -16,6 +16,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
             <title>{metadata.title}</title>
             <meta name="description" content={metadata.description} /> {/* Descriptionni qo'shish */}
             <meta property="og:description" content={metadata.description} />
+            <link rel="canonical" href="https://audit-sklad.uz/about" />
             <main>{children}</main>
         </>
     )

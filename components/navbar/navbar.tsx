@@ -89,17 +89,17 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 ${activeLink === '/ourservice' ? 'active' : ''}`}>
-              <Link href="/ourservice" aria-label="link">
+              <Link href="/services" aria-label="link">
                 {t('nav2')}
               </Link>
             </li>
             <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300  ${activeLink === '/info' ? 'active' : ''}`}>
-              <Link href="/info" aria-label="link">
+              <Link href="/information" aria-label="link">
                 {t('nav3')}
               </Link>
             </li>
             <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-white transition-all duration-300 ${activeLink === '/contact' ? 'active' : ''}`}>
-              <Link href="/contact" aria-label="link">
+              <Link href="/contact-us" aria-label="link">
                 {t('nav4')}
               </Link>
             </li>
@@ -124,17 +124,17 @@ const Navbar: React.FC = () => {
               </li>
 
               <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/ourservice' ? 'active' : ''}`}>
-              <Link href="/ourservice" aria-label="link">
+              <Link href="/services" aria-label="link">
                 {t('nav2')}
               </Link>
             </li>
             <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/info' ? 'active' : ''}`}>
-              <Link href="/info" aria-label="link">
+              <Link href="/information" aria-label="link">
                 {t('nav3')}
               </Link>
             </li>
             <li onClick={() => setNavbarModal(false)} className={`cursor-pointer text-black transition-all duration-300 hover:text-[#fbb533] ${activeLink === '/contact' ? 'active' : ''}`}>
-              <Link href="/contact" aria-label="link">
+              <Link href="/contact-us" aria-label="link">
                 {t('nav4')}
               </Link>
             </li>

@@ -44,6 +44,7 @@ const Footer: React.FC = () => {
                         <a
                             href="https://t.me/InventoryCEO"
                             target="_blank"
+                            rel="noopener"
                             className="child-social"
                             aria-label="telegram"
                         >
@@ -61,6 +62,7 @@ const Footer: React.FC = () => {
                         <a
                             href="https://www.instagram.com/auditsklad.uz/"
                             target="_blank"
+                            rel="noopener"
                             className="child-social"
                             aria-label="instagram"
                         >

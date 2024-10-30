@@ -6,6 +6,9 @@ import ProgressBar from "@/components/RoutingProgres/PrograsBar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
+
+
 
 export const metadata: Metadata = {
   title: {
@@ -58,6 +61,19 @@ export default async function RootLayout({
           <ProgressBar />
 
           {children}
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=G-0418TY7GN1`}
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-0418TY7GN1');
+              `}
+            </Script>
           <Analytics />
           <Footer />
         </body>

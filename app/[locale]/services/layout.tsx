@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl"
 
 
-export default function InfoLayout({ children }: { children: React.ReactNode }){
+export default function ServicesLayout({ children }: { children: React.ReactNode }){
 
-    const t = useTranslations('Information');
+    const t = useTranslations('Services');
 
     const metadata = {
         title: t('titleMeta'),
@@ -15,6 +15,7 @@ export default function InfoLayout({ children }: { children: React.ReactNode }){
             <title>{metadata.title}</title>
             <meta name="description" content={metadata.description} /> {/* Descriptionni qo'shish */}
             <meta property="og:description" content={metadata.description} />
+            <link rel="canonical" href="https://audit-sklad.uz/ourservice" />
             <main>{children}</main>
         </>
     )

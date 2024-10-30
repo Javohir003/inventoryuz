@@ -9,8 +9,7 @@ interface Page {
   lastModified: string
 }
 
-
-export async function generateSitemap(locale: string): Promise<MetadataRoute.Sitemap> {
+export async function generateSitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://audit-sklad.uz';
 
   // Tillar va sahifalar
@@ -20,23 +19,23 @@ export async function generateSitemap(locale: string): Promise<MetadataRoute.Sit
     en: enPages.pagesSitemap as Page[]
   };
 
-  const pages = languages[locale]
   const sitemap: MetadataRoute.Sitemap = [];
 
   // Har bir til uchun URL-larni yaratish
-  pages.forEach((page) => {
-    sitemap.push({
-      url: `${baseUrl}/${locale}${page.path}`, // URL yaratish
-      lastModified: page.lastModified || new Date().toISOString(), // Sahifaning oxirgi o'zgarishi
-      priority: page.priority, // priority qiymati
+  for (const locale in languages) {
+    const pages = languages[locale];
+    pages.forEach((page) => {
+      sitemap.push({
+        url: `${baseUrl}/${locale}${page.path}`, // URL yaratish
+        lastModified: page.lastModified || new Date().toISOString(), // Sahifaning oxirgi o'zgarishi
+        priority: page.priority, // priority qiymati
+      });
     });
-  });
+  }
 
   return sitemap;
 }
 
-export default async function sitemap(context: any): Promise<MetadataRoute.Sitemap> {
-  const locale = context.locale || 'en'; // Default locale 'en'
-  console.log('Locale in use: ', locale); // locale qiymatini check
-  return generateSitemap(locale);
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return generateSitemap();
 }   

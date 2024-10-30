@@ -16,7 +16,7 @@ export default function About() {
             </article>
             <article>
               <h2 className="text-[20px] font-[600]">{t('addres')}</h2>
-              <a href="https://maps.app.goo.gl/BQ3cPYxEDayA4Wvy5" target="_blank" aria-label='link'><p className="text-[#8f8d8d] text-[18px] max-w-[70%]">Ziyolilar street, 9, Mirzo-Ulugbek district, Tashkent</p></a>
+              <a href="https://maps.app.goo.gl/BQ3cPYxEDayA4Wvy5" target="_blank" rel='noopener' aria-label='link'><p className="text-[#8f8d8d] text-[18px] max-w-[70%]">Ziyolilar street, 9, Mirzo-Ulugbek district, Tashkent</p></a>
             </article>
             <article>
               <h2 className="text-[20px] font-[600]">{t('email')}</h2>
