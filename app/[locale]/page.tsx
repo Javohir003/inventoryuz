@@ -345,7 +345,7 @@ export default  function Home() {
                 {t('title_Project_desc')}
               </p>
               <a
-                href={`/${currentLocale}/contact`} 
+                href={`/${currentLocale}/contact-us`} 
                 className="px-8 py-5 rounded-xl border text-white border-[#f5bf5a] bg-[#d5d3d329] hover:bg-[#f5bf5a] hover:border transition-all duration-300"
               >
                 {t('title_Project_btn')}
