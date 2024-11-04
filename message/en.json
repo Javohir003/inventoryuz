@@ -113,7 +113,7 @@
     "alt4": "Assessing the effectiveness of a warehouse team",
     "alt5": "How to properly organize and automate warehouse accounting",
     "alt6": "How to conduct an inventory in a warehouse",
-    "titleMeta": "Info",
+    "titleMeta": "Information",
     "description": "Learn more about Audit-Sklad, our mission and how we provide superior audit and warehouse management and solutions. Explore our expertise, team and commitment to quality service and business performance."
   },
   "Contact": {
@@ -123,6 +123,9 @@
     "email": "Email",
     "titleMeta": "Contact",
     "description": "Get in touch with Audit-Sklad for any inquiries regarding our audit and warehouse management services. Our team is here to assist you with expert advice and personalized solutions to meet your business needs"
+  },
+  "notFound": {
+    "titles": "Back to main"
   },
   "pagesSitemap": [
     { "path": "/", "priority": 1 },
