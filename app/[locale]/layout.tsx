@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
-import Footer from "@/components/footer/Footer";
 import ProgressBar from "@/components/RoutingProgres/PrograsBar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import ClientLayout from "./ClientLayout";
 
 
 
@@ -48,34 +47,36 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params,
+}: {
+  children: React.ReactNode,
+  params: {locale: string}
+
+}) {
+  const {locale} = params;
   const messages = await getMessages();
+  
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <html lang="en">
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <html lang={locale}>
         <body>
-          <Navbar />
           <ProgressBar />
-
-          {children}
-            <Script
-              id="google-analytics"
-              strategy="afterInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=G-0418TY7GN1`}
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
+          <ClientLayout>{children}</ClientLayout>
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=G-0418TY7GN1`}
+          />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-0418TY7GN1');
               `}
-            </Script>
+          </Script>
           <Analytics />
-          <Footer />
         </body>
       </html>
     </NextIntlClientProvider>
