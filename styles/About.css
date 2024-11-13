@@ -1,3 +1,7 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 .Sklad-Aloqa {
   position: relative;
   left: 0;
@@ -32,6 +36,68 @@
   background-color: rgba(243, 185, 10, 0.8392156863);
 }
 
+.video-mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+.video-mask video {
+  position: absolute;
+  top: -50px;
+}
+.video-mask .video-anim {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video-overlay-w {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(23, 22, 21, 0.9);
+}
+
+.video-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  overflow: hidden;
+}
+.video-overlay video {
+  width: 350px !important;
+  height: 650px !important;
+}
+
+.closed {
+  right: 400px;
+  top: 10px;
+}
+.closed svg {
+  width: 25px;
+  fill: white;
+  transition: all 0.3s;
+}
+.closed svg:hover {
+  fill: orange;
+}
+
 @media (max-width: 800px) {
   .about-pages div {
     justify-content: center;
@@ -45,6 +111,13 @@
   }
   .about-pages div article .list-podxod {
     max-width: 100% !important;
+  }
+  .video-overlay video {
+    width: 100%;
+  }
+  .video-mask {
+    width: 100%;
+    height: 450px;
   }
 }
 @media (max-width: 550px) {
