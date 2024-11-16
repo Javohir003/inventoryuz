@@ -90,17 +90,7 @@ export default function About() {
                   </li>
                 </ul>
               </article>
-              <iframe
-                width="570"
-                height="357"
-                className="video-player"
-                src="https://www.youtube.com/embed/EcGZHPx253U?controls=0&showinfo=0&rel=0"
-                title="Inventarizatsiya nima va u nima uchun muhim? (Inventory.uz)"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+              <iframe width="570" height="357" style={{borderRadius: "15px"}} src="https://www.youtube.com/embed/fgrZfKDH1dc?controls=0&showinfo=0&rel=0" title="📦 Что такое инвентаризация и почему она важна?" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
           <div className="video-wrapper mb-6">
