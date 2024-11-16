@@ -14,26 +14,26 @@ export default function About() {
     setVideoActive(!isVideoActive)
   }
 
-  const handleCloseOverlay = (event: React.MouseEvent<HTMLDivElement>) => {
-    const target = event.target as HTMLElement;
-    if (target.classList.contains("video-overlay")) {
-      setVideoActive(false);
-    }
-  };
-  
+  // const handleCloseOverlay = (event: React.MouseEvent<HTMLDivElement>) => {
+  //   const target = event.target as HTMLElement;
+  //   if (target.classList.contains("video-overlay")) {
+  //     setVideoActive(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    if (isVideoActive) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
 
-    // Cleanup: komponent unmount bo'lganda skrollni qayta yoqish
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isVideoActive]);
+  // useEffect(() => {
+  //   if (isVideoActive) {
+  //     document.body.classList.add("no-scroll");
+  //   } else {
+  //     document.body.classList.remove("no-scroll");
+  //   }
+
+  //   // Cleanup: komponent unmount bo'lganda skrollni qayta yoqish
+  //   return () => {
+  //     document.body.classList.remove("no-scroll");
+  //   };
+  // }, [isVideoActive]);
 
   return (
     <>
@@ -90,26 +90,25 @@ export default function About() {
                   </li>
                 </ul>
               </article>
-              <div>
-               <div className="video-mask">
-                <video src="/inventoryvideo.MP4"></video>
-                  <svg onClick={handleVideoActive} className="video-anim"  viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-               </div>
-              </div>
-              
-
+              <iframe
+                width="570"
+                height="357"
+                className="video-player"
+                src="https://www.youtube.com/embed/EcGZHPx253U?controls=0&showinfo=0&rel=0"
+                title="Inventarizatsiya nima va u nima uchun muhim? (Inventory.uz)"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
           <div className="video-wrapper mb-6">
             <TeamListBox />
           </div>
-          {isVideoActive && (
-            <div className="video-overlay-w video-overlay" onClick={handleCloseOverlay}>
-              <video controls width="400px" height="300px" onClick={(e) => e.stopPropagation()}>
-                <source src="/inventoryvideo.MP4" type="video/mp4"/>
-              </video>
-            </div>
-          )}
+          {/* {isVideoActive && (
+           
+          )} */}
         </div>
         <div className="Sklad-Aloqa">
           <article className="container mx-auto title-aloqa">

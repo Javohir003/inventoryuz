@@ -21,7 +21,6 @@
     z-index: 999 !important;
     background-color: #f0efef;
     position: fixed;
-    position: relative;
     left: 0;
     top: 0;
 }

@@ -36,6 +36,10 @@
   background-color: rgba(243, 185, 10, 0.8392156863);
 }
 
+.video-player {
+  border-radius: 10px !important;
+}
+
 .video-mask {
   display: flex;
   justify-content: center;
