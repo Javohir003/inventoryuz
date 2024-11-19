@@ -54,8 +54,10 @@ body {
 }
 
 @media (max-width: 890px) {
-  img {
-    width: 250px !important;
+  .single-card{
+    img {
+      width: 250px;
+    }
   }
 }
 
