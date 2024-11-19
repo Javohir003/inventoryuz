@@ -126,6 +126,12 @@
     }
   }
 
+  @media (max-width: 600px){
+    iframe{
+      max-width: 100% !important;
+    }
+  }
+
   @media (max-width: 550px){
      .title-aloqa{
       text-align: center;

@@ -73,6 +73,9 @@ footer {
   }
 }
 @media (max-width: 400px) {
+  .footer-wrapper {
+    padding: 0px 10px !important;
+  }
   .Logo-wrapper {
     margin-bottom: 10px;
   }

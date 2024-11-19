@@ -6,8 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 body {
   background-color: #f0efef;
 }
@@ -55,10 +53,54 @@ body {
   }
 }
 
+@media (max-width: 890px) {
+  img {
+    width: 250px !important;
+  }
+}
 
+@media (max-width: 800px) {
+  .single-card {
+    display: flex !important;
+    img {
+      width: 250px !important;
+    }
+    div {
+      display: flex !important;
+      flex-direction: column !important;
+      article {
+        max-width: 100%;
+      }
+    }
+  }
+}
 
+@media (max-width: 590px) {
+  .list-disc {
+    margin-left: 8px !important;
+  }
+  h1 {
+    line-height: 29px;
+  }
+}
 
+@media (max-width: 500px) {
+  .list-disc {
+    margin-left: 20px !important;
+  }
+  .single-card {
+    h1 {
+      font-size: 21px !important;
+      line-height: 27px;
+    }
+    img {
+      width: 100% !important;
+    }
+  }
+}
 
-
-
-
+@media (max-width: 400px){
+  .single-card{
+    padding-top: 98px;
+  }
+}

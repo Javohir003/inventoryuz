@@ -61,7 +61,6 @@
     "Team_men4": "Project Specialist",
     "adress": "Ziyolilar street, 9, Mirzo-Ulugbek district, Tashkent",
     "copyright": "All rights reserved"
-
   },
   "About": {
     "title": "Many years of team experience",
@@ -106,7 +105,6 @@
     "card5_desc": "Today, automation of goods accounting in a warehouse is such a common and widespread phenomenon that it is becoming increasingly difficult to find a non-automated warehouse. There are many ways to organize warehouse accounting; for automation, modified solutions of ERP systems, industrial ready-made WMS solutions or similar self-written ones are used. Methods for automating the accounting of goods in a warehouse Depending on the assortment, scale of activity and specifics of warehouse processes",
     "card6_title": "How to conduct an inventory in a warehouse: types, sequence, documents",
     "card6_desc": "The main purpose of inventory of inventory items in a warehouse is to provide the company with real information about balances, identify shortages, surpluses and mismatches, and establish facts of theft and abuse. In addition, the data obtained during the inspection can become a good basis for revising approaches to organizing warehouse operations, optimizing technological processes and automation equipment. How to take inventory in a warehouse, what you need",
-
     "alt1": "Inventory management in an enterprise warehouse",
     "alt2": "Main warehouse problems and their solutions",
     "alt3": "Inventory in a warehouse: how and why to carry out",
@@ -114,7 +112,56 @@
     "alt5": "How to properly organize and automate warehouse accounting",
     "alt6": "How to conduct an inventory in a warehouse",
     "titleMeta": "Information",
-    "description": "Learn more about Audit-Sklad, our mission and how we provide superior audit and warehouse management and solutions. Explore our expertise, team and commitment to quality service and business performance."
+    "description": "Learn more about Audit-Sklad, our mission and how we provide superior audit and warehouse management and solutions. Explore our expertise, team and commitment to quality service and business performance.",
+    "singleCard": {
+      "title1": "Warehouse Inventory Management: Methods, Strategies, Optimization Tools",
+      "description1": "How to create a warehouse inventory management system that dynamically manages the production and sales processes of goods, accelerates turnover, and increases business profitability? In this article, we will discuss this. The main goal of an inventory management system is to find the optimal balance between inventory levels and the costs of purchasing and storing it: there must be enough inventory to avoid halting production.",
+      "descriptionTitle1": "A well-organized inventory management provides the following benefits:",
+      "descChild1": "Efficient resource usage: reducing unnecessary stock and optimizing costs.",
+      "descChild2": "Faster delivery: increasing customer satisfaction by responding quickly to customer needs.",
+      "descChild3": "Prevention of losses: minimizing losses that may result from incorrect inventory.",
+      "descChild4": "Use of modern technologies: real-time monitoring and forecasting through tools like AI and IoT.",
+      "title2": "Key Problems in Warehouses and Their Solutions",
+      "description2": "Warehouses are a crucial infrastructure for many businesses, and problems in them can seriously affect the overall efficiency of the company. The main problems are often related to the reduced speed of processing the flow of goods, decreased throughput, and increased costs. These issues often arise from mistakes made during the initial design phase of the warehouse or from improperly organized processes.",
+      "descriptionTitle2": "Here are the main problems encountered in warehouses and ways to solve them:",
+      "descChild5": "Incorrect inventory management",
+      "descChild6": "Incorrect product placement",
+      "descChild7": "Low employee efficiency",
+      "descChild8": "Outdated technology",
+      "descChild9": "Failure to meet customer demand",
+      "title3": "Warehouse Inventory Check: How and Why It Should Be Done",
+      "description3": "Inventory checking is an integral part of the control system, and without it, it is impossible to manage both large logistics complexes and small store warehouses. Conducting an inventory check not only verifies the availability and condition of goods but also helps to identify problems that need solutions. In this article, we will discuss how to properly conduct inventory and simplify, speed up, and optimize the process.",
+      "descriptionTitle3": "Why is Inventory Necessary?",
+      "descChild10": "Determining the condition of goods: Inventory allows checking the quality and quantity of available products in the warehouse.",
+      "descChild11": "Accuracy of financial reports: Correct inventory calculation ensures the reliability of financial statements.",
+      "descChild12": "Identification of losses and errors: Inventory can help detect missing goods or incorrectly recorded stock.",
+      "descChild13": "Optimizing planning: This process helps in accurately forecasting demand and improving inventory management strategies.",
+      "descriptionTitle3Child": "How to Conduct Inventory?",
+      "descriptionTitle3Child1": "Preparation phase",
+      "descriptionTitle3Child2": "Choosing inventory methods",
+      "descriptionTitle3Child3": "Data collection and analysis",
+      "title4": "Evaluating Warehouse Team Performance: Finding Stability and Growth Opportunities in an Economic Crisis",
+      "descriptionTitle4": "Why is Evaluating Warehouse Team Performance Important?",
+      "descChild14": "Improving work efficiency: Measuring the outcomes of team actions helps determine efficiency levels.",
+      "descChild15": "Maintaining stability: Properly managing operations and optimizing resources during an economic crisis.",
+      "descChild16": "Identifying weaknesses: Detecting mistakes and gaps in the work process and eliminating them.",
+      "descChild17": "Implementing innovations: Using new approaches and technologies to improve the team’s weak points.",
+      "description4": "Rapid changes in the global economy affect almost all sectors, including production, trade, transport, logistics, and the efficiency of warehouse management. To succeed with minimal losses in difficult times, it is essential to adjust management approaches, seek hidden reserves, and find opportunities for stabilizing and developing business. Evaluating team performance is an important tool in this process.",
+      "title5": "Properly Organizing and Automating Inventory Management in a Warehouse",
+      "description5": "Today, automation of inventory management in warehouses is so widespread that finding a warehouse without automation is becoming increasingly difficult. There are various ways to organize inventory in a warehouse; modified ERP systems for automation, ready-made industry WMS systems, or custom-built systems are used. The methods for automating inventory management depend on the assortment, operation volume, and the specific characteristics of warehouse processes.",
+      "descriptionTitle5": "Importance of Automating Inventory Management",
+      "descChild18": "Speeding up processes",
+      "descChild19": "Preventing human errors",
+      "descChild20": "Real-time data",
+      "descChild21": "Warehouse Management Systems (WMS)",
+      "descChild22": "ERP Systems",
+      "title6": "How Inventory is Conducted in a Warehouse: Types, Sequence, Documents",
+      "description6": "The main goal of inventory in a warehouse is to provide the company with accurate information about the inventory level, identify shortages, excess goods, and discrepancies, as well as detect theft and misuse. Additionally, the data obtained from the check can provide a solid basis for revisiting warehouse processes, optimizing technological processes, and improving automation equipment. How inventory is conducted and what is needed for it.",
+      "descriptionTitle6": "There are several types of inventory processes in a warehouse. Each one is designed to achieve a specific goal and is used in different situations.",
+      "descChild23": "The inventory process requires a specific sequence of actions. By properly following this process, all products and materials are accurately and fully accounted for.",
+      "descChild24": "To formalize the inventory process and ensure its legality, several documents are necessary. These documents confirm that the inventory has been properly conducted and that all products have been controlled."
+    }
+    
   },
   "Contact": {
     "title": "Contact",
@@ -128,10 +175,25 @@
     "titles": "Back to main"
   },
   "pagesSitemap": [
-    { "path": "/", "priority": 1 },
-    { "path": "/about", "priority": 0.8 },
-    { "path": "/ourservice", "priority": 0.8 },
-    { "path": "/info", "priority": 0.8},
-    { "path": "/contact", "priority": 0.8}
+    {
+      "path": "/",
+      "priority": 1
+    },
+    {
+      "path": "/about",
+      "priority": 0.8
+    },
+    {
+      "path": "/ourservice",
+      "priority": 0.8
+    },
+    {
+      "path": "/info",
+      "priority": 0.8
+    },
+    {
+      "path": "/contact",
+      "priority": 0.8
+    }
   ]
 }

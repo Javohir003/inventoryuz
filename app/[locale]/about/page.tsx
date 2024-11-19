@@ -14,27 +14,6 @@ export default function About() {
     setVideoActive(!isVideoActive)
   }
 
-  // const handleCloseOverlay = (event: React.MouseEvent<HTMLDivElement>) => {
-  //   const target = event.target as HTMLElement;
-  //   if (target.classList.contains("video-overlay")) {
-  //     setVideoActive(false);
-  //   }
-  // };
-
-
-  // useEffect(() => {
-  //   if (isVideoActive) {
-  //     document.body.classList.add("no-scroll");
-  //   } else {
-  //     document.body.classList.remove("no-scroll");
-  //   }
-
-  //   // Cleanup: komponent unmount bo'lganda skrollni qayta yoqish
-  //   return () => {
-  //     document.body.classList.remove("no-scroll");
-  //   };
-  // }, [isVideoActive]);
-
   return (
     <>
       <div className="w-full h-full pt-[120px]">
@@ -90,7 +69,7 @@ export default function About() {
                   </li>
                 </ul>
               </article>
-              <iframe width="570" height="357" style={{borderRadius: "15px"}} src="https://www.youtube.com/embed/fgrZfKDH1dc?controls=0&showinfo=0&rel=0" title="📦 Что такое инвентаризация и почему она важна?" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="570" height="357" style={{borderRadius: "15px"}} src="https://www.youtube.com/embed/fgrZfKDH1dc?controls=1&showinfo=0&rel=0" title="📦 Что такое инвентаризация и почему она важна?" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
           <div className="video-wrapper mb-6">
