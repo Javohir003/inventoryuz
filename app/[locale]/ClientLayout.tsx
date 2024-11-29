@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isNotFoundPage = pathname === "/not-found" || pathname.includes("not-found");git 
+  const isNotFoundPage = pathname === "/not-found" || pathname.includes("not-found");
   return (
     <>
       {/* Agar shouldShowNavbarAndFooter true bo'lsa, Navbar ko'rsatilsin */}
