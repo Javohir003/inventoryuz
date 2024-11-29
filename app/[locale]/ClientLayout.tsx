@@ -1,21 +1,21 @@
-"use client"; // Mijoz komponenti sifatida belgilash
+"use client";
 
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname(); // Joriy URL manzilini olish
-  // URL manzilini tekshirish
-  const isNotFoundPage = pathname === '/not-found' || pathname.includes('/[...not_found]');
-
+  const pathname = usePathname();
+  const isNotFoundPage = pathname === "/not-found" || pathname.includes("not-found");
   return (
     <>
-      {/* Faqat not found sahifasi emas bo'lsa, Navbar va Footer ko'rsatilsin */}
+      {/* Agar shouldShowNavbarAndFooter true bo'lsa, Navbar ko'rsatilsin */}
       {!isNotFoundPage && <Navbar />}
-
+      
+      {/* Asosiy bolalar (children) */}
       {children}
-      {/* Faqat not found sahifasi emas bo'lsa, Footer ko'rsatilsin */}
+      
+      {/* Agar shouldShowNavbarAndFooter true bo'lsa, Footer ko'rsatilsin */}
       {!isNotFoundPage && <Footer />}
     </>
   );

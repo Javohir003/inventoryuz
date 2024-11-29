@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         {/* show navbar modal end */}
-        <div className="fixed z-50 w-full bg-white">
+        <div className="fixed z-50 w-full bg-white bg-red-700">
           <nav className="max-w-[1180px] px-2 flex justify-between items-center m-auto py-[10px]">
             <Link href="/" onClick={() => handleLinkClick('/')}><Image className="w-[250px] logo" src={Logo} alt="Logo" /></Link>
             <ul className="flex gap-10  nav-item">
