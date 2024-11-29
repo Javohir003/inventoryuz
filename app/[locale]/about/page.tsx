@@ -1,10 +1,18 @@
+"use client"
 
 import TeamListBox from "@/components/wsteam/teams";
 import "@/styles/About.css";
 import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
 
 export default function About() {
   const t = useTranslations("About");
+  const [isVideoActive, setVideoActive] = useState(false)
+
+
+  const handleVideoActive = () => {
+    setVideoActive(!isVideoActive)
+  }
 
   return (
     <>
@@ -61,11 +69,15 @@ export default function About() {
                   </li>
                 </ul>
               </article>
+              <iframe width="570" height="357" style={{borderRadius: "15px"}} src="https://www.youtube.com/embed/fgrZfKDH1dc?controls=1&showinfo=0&rel=0" title="📦 Что такое инвентаризация и почему она важна?" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
           <div className="video-wrapper mb-6">
             <TeamListBox />
           </div>
+          {/* {isVideoActive && (
+           
+          )} */}
         </div>
         <div className="Sklad-Aloqa">
           <article className="container mx-auto title-aloqa">
